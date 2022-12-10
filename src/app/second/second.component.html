@@ -1,1 +1,20 @@
-<p>second works!</p>
+<h2>Data binding</h2>
+<br>
+
+<div class="img-examples">
+    <div class="angular">
+        <img src="{{firstImageUrl}}" width="{{firstImageWidth}}" alt="first image">
+        <hr>
+        {{firstImageWidth}}
+    </div>
+    <div class="js">
+        <img [src]="secondImageUrl" [width]="secondImageWidth" alt="second image">
+        <hr>
+        {{secondImageWidth}}
+    </div>
+</div>
+<hr>
+<div class="inputs">
+    <input type="radio" name="btns">
+    <input type="radio" [checked]="flag" name="btns">
+</div>
