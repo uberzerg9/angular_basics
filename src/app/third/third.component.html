@@ -1,1 +1,15 @@
-<p>third works!</p>
+<h2>Event Binding</h2>
+
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<br>
+{{counter}}
+<hr>
+<button (click)="consoleCounter(counter)">Console counter</button>
+<hr>
+<button (click)="consoleEventObj1($event)">Event object</button>
+<button (click)="consoleEventObjValue($event.type)">button type</button>
+<hr>
+<button (click)="a = 'hello'; b = ' new text;'">Change the value of properties</button>
+<br>
+{{a + b}}
