@@ -8,6 +8,9 @@ import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { FifthComponent } from './fifth/fifth.component';
+import { SixthComponent } from './sixth/sixth.component';
+import { SeventhComponent } from './seventh/seventh.component';
+import { EightComponent } from './eight/eight.component';
 
 const routes: Routes = [
   {path: 'first', component: FirstComponent},
@@ -15,6 +18,9 @@ const routes: Routes = [
   {path: 'third', component: ThirdComponent},
   {path: 'fourth', component: FourthComponent},
   {path: 'fifth', component: FifthComponent},
+  {path: 'sixth', component: SixthComponent},
+  {path: 'seventh', component: SeventhComponent},
+  {path: 'eight', component: EightComponent},
 ]
 
 @NgModule({
@@ -24,7 +30,10 @@ const routes: Routes = [
     SecondComponent,
     ThirdComponent,
     FourthComponent,
-    FifthComponent
+    FifthComponent,
+    SixthComponent,
+    SeventhComponent,
+    EightComponent
   ],
   imports: [
     BrowserModule,
