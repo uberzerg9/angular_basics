@@ -1,1 +1,11 @@
-<p>eight works!</p>
+<h2>Style binding</h2>
+
+<div [style.background-color]="'green'" class="block">
+    Block
+</div>
+<hr>
+<button (click)="toggle = !toggle">Change bg</button>
+<hr>
+<div [style.background-color]="toggle ? 'gold' : 'skyblue'" class="block">
+    Block
+</div>

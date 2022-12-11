@@ -1,1 +1,7 @@
-<p>seventh works!</p>
+<h2>Class Binding</h2>
+
+<div class="blocks">
+    <div [class]="stringClasses">1</div>
+    <div [class.bg]="flag" [class.border]="flag">2</div>
+</div>
+<button (click)="flag = !flag">Click</button>
